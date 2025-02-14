@@ -112,7 +112,8 @@ Power BI was used to analyze data.
 | 26   | DSRN WoW change %         | To get the DSRN(Daily Sellable Room Nights) change percentage week over week. Here, revcw for current week, revpw for previous week. | DSRN WoW change % = Var selv = IF(HASONEFILTER(dim_date[wn]), SELECTEDVALUE(dim_date[wn]), MAX(dim_date[wn])) var revcw = CALCULATE([DSRN], dim_date[wn]=selv) var revpw=CALCULATE([DSRN],FILTER(ALL(dim_date),dim_date[wn]= selv-1)) return DIVIDE(revcw,revpw,0)-1 | dim_date |
 
 
-## 5. SHARE  
+## 5. Dashboard Link
+**link** : https://app.powerbi.com/view?r=eyJrIjoiZDRkZjAwZmEtYmM3NC00MWNkLWE1NjYtM2RiNGQwYTQxYmVhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9
 
 
 
